@@ -1,2 +1,4 @@
 # sync-reactor-async
-Allows to build reactive sync API for async services. May be very useful while migrating to asynch approach. Some legacy services may rquire sync interfaces still.
+Allows to build reactive sync API for async services. While migrating to async approach, some legacy services may still require sync interfaces. Basic approach for migration is to call some method and then wait for message in Kafka or periodically poll Rest endpoint. Traditional blocking approach may run out of threads on highly loaded service. Reactive approach guaranty much more higher capacity.
+
+
